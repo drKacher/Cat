@@ -19,10 +19,15 @@ public class  Cat
     {
         weight = 1500.0 + 3000.0 * Math.random();
         originWeight = weight;
-        minWeight = 1000.0;
-        maxWeight = 9000.0;
+        minWeight = MIN_WEIGHT;
+        maxWeight = MAX_WEIGHT;
         count++;
 
+    }
+
+    public Cat(Double weight) {
+        //this();
+        this.weight = weight;
     }
 
     public void meow()
